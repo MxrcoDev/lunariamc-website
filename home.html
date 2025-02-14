@@ -1,0 +1,260 @@
+<!doctype html>
+<html lang="en" class="dark-mode">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>LunariaMC Home</title>
+
+    <!-- IMPORT DEI CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" type="text/css" href="./src/styles/style.css">
+    <link rel="stylesheet" type="text/css" href="./src/styles/particles.css">
+    <link rel="stylesheet" type="text/css" href="./src/styles/minecraft-icons.css">
+
+    <!-- IMPORT DEGLI SCRIPT -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="./src/scripts/particles.js"></script>
+    <script src="./src/scripts/copyButton.js" defer></script>
+    <script src="./src/scripts/logoMovement.js" defer></script>
+    <script src="./src/scripts/autoScrollButton.js" defer></script>
+    <script src="./src/scripts/scrollAnimations.js" defer></script>
+    <script src="./src/scripts/carousel.js" defer></script>
+    <script src="./src/scripts/reload.js" defer></script>
+    <script src="./src/scripts/themeSwitch.js" defer></script>
+
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="fixed-top" id="header1">
+      <div class="container">
+        <nav class="navbar navbar-expand-md">
+          <a href="https://www.lunariamc.it/" class="navbar-brand">
+            <img src="./src/img/logo.png" alt="LunariaMC" draggable="false">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <svg height="20" width="20" fill="white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+              <path d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z"></path>
+            </svg>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="https://www.lunariamc.it">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="bans.html">Bans</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="regolamento.html">Regolamento</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="staff.html">Staff</a>
+              </li>
+              <li class="nav-item ms-md-auto">
+                <a href="https://store.lunariamc.it" class="store-button">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                    <path d="M547.6 103.8L490.3 13.1C485.2 5 476.1 0 466.4 0L109.6 0C99.9 0 90.8 5 85.7 13.1L28.3 103.8c-29.6 46.8-3.4 111.9 51.9 119.4c4 .5 8.1 .8 12.1 .8c26.1 0 49.3-11.4 65.2-29c15.9 17.6 39.1 29 65.2 29c26.1 0 49.3-11.4 65.2-29c15.9 17.6 39.1 29 65.2 29c26.2 0 49.3-11.4 65.2-29c16 17.6 39.1 29 65.2 29c4.1 0 8.1-.3 12.1-.8c55.5-7.4 81.8-72.5 52.1-119.4zM499.7 254.9c0 0 0 0-.1 0c-5.3 .7-10.7 1.1-16.2 1.1c-12.4 0-24.3-1.9-35.4-5.3L448 384l-320 0 0-133.4c-11.2 3.5-23.2 5.4-35.6 5.4c-5.5 0-11-.4-16.3-1.1l-.1 0c-4.1-.6-8.1-1.3-12-2.3L64 384l0 64c0 35.3 28.7 64 64 64l320 0c35.3 0 64-28.7 64-64l0-64 0-131.4c-4 1-8 1.8-12.3 2.3z"></path>
+                  </svg>
+                  <span>Store</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <!-- <button id="themeToggle" class="theme-toggle" aria-label="Cambia tema">
+          <i class="bi bi-moon-fill"></i>
+        </button> -->
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="background_main d-flex flex-column justify-content-between min-vh-100">
+      <!-- particles.js container --> <div id="particles-js"></div> <!-- stats - count particles --> <div class="count-particles"> <span class="js-count-particles"></span></div> <!-- particles.js lib - https://github.com/VincentGarreau/particles.js --> <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> <!-- stats.js lib --> <script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
+      
+      <div class="content-wrapper d-flex flex-column justify-content-center flex-grow-1">
+        <div class="container">
+          <div class="content text-center">
+            <div id="logo-container" class="mb-4">
+              <img src="./src/img/logo.png" alt="Logo LunariaMC" class="logo">
+            </div>
+            <h1 class="title mb-3">LunariaMC</h1>
+            <p class="description mb-4">Entra in un mondo di avventure senza limiti! LunariaMC ti offre un'esperienza Minecraft unica, con modalità esclusive e una community accogliente.</p>
+            <button id="copyButton" class="copy-button">
+              <span class="button-text">Copia IP</span>
+              <div class="button-spinner"></div>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="scroll-button-container">
+        <button id="scrollButton" class="scroll-button" aria-label="Scorri verso il basso"></button>
+      </div>
+
+      <div class="air-container">
+        <div class='air air1'></div>
+        <div class='air air2'></div>
+        <div class='air air3'></div>
+        <div class='air air4'></div>
+      </div>
+    </main>
+
+<!-- Second Section -->
+<section id="secondSection" class="py-5">
+  <div class="container">
+    <!-- Character and Description -->
+    <div class="row justify-content-center">
+      <div class="col-lg-10">
+        <div class="row align-items-center">
+          <div class="col-md-6 mb-4 mb-md-0">
+            <div class="character-container">
+              <img src="./src/img/charachter.png" alt="Server Character" class="img-fluid character-img">
+            </div>
+          </div>
+          <div class="col-md-6">
+            <h2 class="text-primary"><strong>Benvenuto su LunariaMC</strong></h2>
+            <p class="pdescription">Entra in un mondo di avventure senza limiti! LunariaMC ti offre un'esperienza Minecraft unica, con modalità esclusive e una community accogliente. Esplora, costruisci e combatti in un universo creato appositamente per te.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+<!-- Feature Cards Section -->
+  <section id="featureCards" class="py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="feature-card text-center">
+            <i class="bi bi-globe feature-icon"></i>
+            <h3 class="feature-title">Mondi Personalizzati</h3>
+            <p class="feature-description">Esplora mondi unici creati appositamente per offrirti un'esperienza di gioco indimenticabile.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="feature-card text-center">
+            <i class="bi bi-people feature-icon"></i>
+            <h3 class="feature-title">Community Attiva</h3>
+            <p class="feature-description">Unisciti a una community vivace e amichevole, sempre pronta ad accogliere nuovi giocatori.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="feature-card text-center">
+            <i class="bi bi-gear feature-icon"></i>
+            <h3 class="feature-title">Modalità Esclusive</h3>
+            <p class="feature-description">Scopri modalità di gioco uniche, create per offrirti sfide entusiasmanti e divertimento senza fine.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Carousel -->
+  <section id="serverCarousel" class="py-5">
+    <div class="container-fluid">
+      <div class="row justify-content-center">
+        <div class="col-12">
+          <div id="serverImages" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="src/img/img1.png" class="d-block w-100" alt="Minecraft Landscape">
+                <div class="carousel-caption">
+                  <p>Esplora un vasto mondo custom senza limiti con i tuoi amici!</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="src/img/img2.png" class="d-block w-100" alt="Minecraft Scenery">
+                <div class="carousel-caption">
+                  <p>Costruisci le tue creazioni in mondi fantastici e suggestivi</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="src/img/img3.png" class="d-block w-100" alt="Minecraft World">
+                <div class="carousel-caption">
+                  <p>Partecipa a emozionanti avventure e sfide uniche su LunariaMC</p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#serverImages" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#serverImages" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sezione Sidebar -->
+  <section id="serverFeatures" class="py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3 position-relative">
+          <div class="sidebar-container">
+            <div class="vertical-line top"></div>
+            <h3 class="sidebar-title">CONSIGLIATO A CHI VUOLE</h3>
+            <div class="vertical-line bottom"></div>
+          </div>
+        </div>
+        <div class="col-md-9">
+          <div class="feature-item-container">
+            <div class="feature-item">
+              <i class="bi bi-controller feature-icon"></i>
+              <h4 class="text-secondary">Vivere avventure fantasy</h4>
+            </div>
+            <div class="feature-item">
+              <i class="bi bi-globe feature-icon"></i>
+              <h4 class="text-secondary">Esplorare dungeon intricati</h4>
+            </div>
+            <div class="feature-item">
+              <i class="bi bi-people-fill feature-icon"></i>
+              <h4 class="text-secondary">Giocare con gli amici</h4>
+            </div>
+            <div class="feature-item">
+              <i class="bi bi-trophy-fill feature-icon"></i>
+              <h4 class="text-secondary">Competere e scalare classifiche</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</section>
+  <!-- FOOTER -->
+  <div class="ftContainer">  
+  <div class="wave-divider">
+    <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path d="M0,120V0c50,15,100,30,150,40s100,20,150,20,100-5,150-10,100-10,150-10,100,5,150,10,100,10,150,20,100,25,150,40v120Z" fill="#0a1927"></path>
+    </svg>
+  </div>
+
+  <div class="footer">
+    <div class="footer-middle">
+        
+        <div class="footer-left">
+            <img src="./src/img/logo.png" alt="Logo">
+            <p>© 2024 LunariaMC</p>
+            <p><i class="icon-minecraft icon-minecraft-mojang-banner-pattern"></i> Non siamo partner o affiliati a Mojang</p>
+            <p>Tutti i diritti riservati.</p>
+        </div>
+        <div class="footer-center">
+
+        </div>
+        <div class="footer-right">
+            <p><i class="icon-minecraft icon-minecraft-enchanted-book"></i></p>
+            <p>Developed by <a href="https://discord.com/users/694456167438614578">Marcotachitos</a></p>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <a href="discord.lunariamc.it">Termini e Condizioni</a>
+        <a href="discord.lunariamc.it">Politica sulla Privacy</a>
+    </div>
+</div>
+</div>    
+</body>
+</html>
